@@ -1,6 +1,6 @@
 
 
-To build the entrypoint toward testing, please install bazel perform the following build:
+To build the entrypoint toward testing, please install [Bazel](https://bazel.build/install) perform the following build:
 
 ```bash
 bazel run :test
