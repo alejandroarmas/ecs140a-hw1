@@ -15,12 +15,15 @@ public class Test {
 		StringBuilder reportBuilder = new StringBuilder();
         StudentFactory factory = new StudentFactory();
         Reader a = new Reader();
-		
+
+
+        String file_name = "data/hw2.txt";
+
         Vector<String> data = null;
 
         try 
         {
-            data = a.read("data/hw2.txt");
+            data = a.read(file_name);
         }
         catch (Exception e) 
         {
@@ -54,7 +57,7 @@ public class Test {
 		int total_fees = 0;
 
         for (int i = 0; i < data.size(); i++) {
-            
+
             AbstractStudent student = students[i]; 
             int student_fee = student.computeFees();
 
